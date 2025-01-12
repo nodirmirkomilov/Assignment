@@ -1,0 +1,41 @@
+.ecosistem {
+    padding-bottom: 167px;
+  &__list {
+    // width: 100%;
+    justify-content: space-between;
+  }
+  &__link {
+    border: 1px dashed #cfdaeb;
+    box-sizing: border-box;
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+    padding: 33px 32px;
+    text-decoration: none;
+    flex: 0 0 calc(100% / 3 - 34px);
+    max-width: calc(100% / 3 - 34px);
+    margin-bottom: 40px;
+    display: inline-flex;
+    & .icon {
+      width: 75px;
+      height: 75px;
+      background-color: $primaryColor;
+      border-radius: 17px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+      flex: 1 0 75px;
+      max-width: 75px;
+    }
+    & .text {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 26px;
+
+      color: #333232;
+    }
+  }
+}

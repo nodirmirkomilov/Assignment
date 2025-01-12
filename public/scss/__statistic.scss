@@ -1,0 +1,87 @@
+.statistic {
+  padding-bottom: 145px;
+  &__list {
+    background: $primaryColor;
+    box-shadow: 0px 29px 27px rgba(41, 93, 181, 0.15);
+    border-radius: 23px;
+    padding: 35px 27px;
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  &__item {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 calc(100% / 5);
+    max-width: calc(100% / 5);
+    padding-left: 18px;
+    padding-right: 18px;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 55px;
+      right: 0;
+      transform: translateY(-50%);
+      height: 70px;
+      width: 1px;
+      background-color: rgba($color: #fff, $alpha: 0.6);
+    }
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+      &::before {
+        content: none;
+      }
+    }
+    & .__header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 17px;
+      min-height: 56px ;
+      .icon {
+        margin-right: 10px;
+      }
+      .text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 26px;
+        /* identical to box height, or 81% */
+
+        text-align: center;
+
+        color: #ffffff;
+        & small {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 24px;
+          line-height: 22px;
+          /* or 92% */
+
+          color: #ffffff;
+        }
+      }
+    }
+    & .__body {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 26px;
+      /* or 130% */
+      word-break: break-all;
+      text-align: center;
+
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}

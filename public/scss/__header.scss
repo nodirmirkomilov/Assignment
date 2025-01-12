@@ -1,0 +1,113 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 96px;
+
+  background: rgba(41, 93, 181, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 29px 27px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(25px);
+  
+  z-index: 100;
+  &__container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-decoration: none;
+    margin-right: 10px;
+    & .title {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 23px;
+      color: #ffffff;
+    }
+    & .subtitle {
+      font-family: "Gilroy", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 11.0526px;
+      line-height: 13px;
+      text-align: right;
+      color: #ffffff;
+    }
+  }
+  & .nav {
+    margin-left: auto;
+    margin-right: 205px;
+    &__item {
+      margin-right: 90px;
+    }
+    &__link {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 162.9%;
+      color: #ffffff;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  & .lang {
+    position: relative;
+    & .btn {
+      padding: 7px 13px;
+      padding-right: 30px;
+      background-color: #ffffff;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: $primaryColor;
+      border-radius: 20px;
+      text-transform: uppercase;
+    }
+    & .dropdown-toggle::after {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+      width: 14px;
+      height: 14px;
+      background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.4425 3.5H8.5575C10.4942 3.5 11.2817 4.87083 10.3192 6.545L9.8875 7.29167C9.7825 7.4725 9.59 7.58333 9.38 7.58333H4.62C4.41 7.58333 4.2175 7.4725 4.1125 7.29167L3.68083 6.545C2.71833 4.87083 3.50583 3.5 5.4425 3.5Z' fill='%23295DB5'/%3E%3Cpath d='M5.12747 8.16669H8.87831C9.10581 8.16669 9.24581 8.41169 9.12914 8.60419L8.75581 9.24585C7.79331 10.92 6.20664 10.92 5.24414 9.24585L4.87081 8.60419C4.75997 8.41169 4.89997 8.16669 5.12747 8.16669Z' fill='%23295DB5'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+    & .dropdown-menu {
+      padding: 0;
+      min-width: auto;
+      width: 100%;
+      //   border-radius: 17px;
+      overflow: hidden;
+      border: none;
+    }
+    & .dropdown-item {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: $primaryColor;
+      border: none;
+      text-transform: uppercase;
+      &:hover {
+        color: white;
+        background-color: $primaryColor;
+      }
+    }
+  }
+}

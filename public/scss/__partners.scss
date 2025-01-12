@@ -1,0 +1,15 @@
+.partners {
+  padding-bottom: 161px;
+  &__list {
+  }
+  &__item {
+    padding: 50px;
+    border-radius: 23px;
+    border: 1px dashed #cfdaeb;
+    height: 216px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+}

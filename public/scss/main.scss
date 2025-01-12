@@ -1,0 +1,110 @@
+/* USER VARIABLES SECTION */
+
+:root {
+  --accent: orange;
+  --fontsize: 16px;
+  --textcolor: #333;
+  --lineheight: 1.65;
+  --userfont: roboto-st, sans-serif;
+  --systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+}
+
+/* FONTS LOAD SECTION */
+
+@font-face {
+  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2");
+  font-family: "roboto-st";
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  src: url("../fonts/roboto-italic-webfont.woff2") format("woff2");
+  font-family: "roboto-st";
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2");
+  font-family: "roboto-st";
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2");
+  font-family: "roboto-st";
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* GENERAL CSS SETTINGS */
+
+::placeholder {
+  color: #666;
+}
+::selection {
+  background-color: var(--accent);
+  color: #fff;
+}
+input,
+textarea {
+  outline: none;
+}
+input:focus:required:invalid,
+textarea:focus:required:invalid {
+  border-color: red;
+}
+input:required:valid,
+textarea:required:valid {
+  border-color: green;
+}
+
+body {
+  font-family: var(--userfont);
+  font-size: var(--fontsize);
+  line-height: var(--lineheight);
+  color: var(--textcolor);
+  min-width: 320px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+$primaryColor: #295db5;
+$secondaryColor: #73f7b1;
+/* USER STYLES */
+
+.section__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 102.9%;
+  color: #333232;
+  margin-bottom: 14px;
+}
+.section__subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #8f97a3;
+  margin-bottom: 14px;
+}
+#app {
+    overflow-x: hidden;
+}
+main {
+    position: relative;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+}
+@import "./_header";
+@import "./_intro";
+@import "./_useful__link";
+@import './_ecosistem';
+@import './_statistic';
+@import './_dicrection';
+@import './_reasons';
+@import './_stages';
+@import './_requirements';
+@import './_partners';
+@import './_footer';
